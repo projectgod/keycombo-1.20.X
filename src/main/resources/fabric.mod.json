@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "keycombo",
+	"version": "${version}",
+	"name": "Horse Piss",
+	"description": "Introduce a new twist to Minecraft! Obtain the exclusive 'Bucket of Horse Piss' by right-clicking on horses with an empty bucket. Use this unique item to speed up the oxidation of copper blocks, adding a fresh dimension to gameplay.",
+	"authors": [
+		"buv!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/keycombo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"acc.buv.keycombo.KeyCombo"
+		],
+		"client": [
+			"acc.buv.keycombo.KeyComboClient"
+		],
+		"fabric-datagen": [
+			"acc.buv.keycombo.KeyComboDataGenerator"
+		]
+	},
+	"mixins": [
+		"keycombo.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
